@@ -117,18 +117,18 @@ const styles = StyleSheet.create({
     backgroundColor: 'pink',
   },
   Header: {
-    flex: 0.35,
+    flex: 0.3,
     alignItems: 'center',
   },
   Logo: {
-    marginTop: 15,
+    // marginTop: 15,
     width: 250,
     height: 250,
   },
 
   Body: {
     flex: 0.6,
-    top: 0,
+
     alignItems: 'center',
   },
   inputBody: {
@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 25,
-    bottom: 70,
+    // bottom: 70,
     width: 300,
     height: 55,
     backgroundColor: 'gray',

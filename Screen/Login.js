@@ -99,14 +99,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   Logo: {
-    marginTop: 15,
+    // marginTop: 15,
     width: 250,
     height: 250,
   },
 
   Body: {
-    flex: 0.3,
-    top: 0,
+    flex: 0.35,
+
 
     alignItems: 'center',
   },
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
   },
   Footer: {
-    flex: 0.45,
+    flex: 0.3,
 
     alignItems: 'center',
   },

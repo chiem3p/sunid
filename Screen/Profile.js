@@ -7,6 +7,7 @@ import {
   Image,
   TouchableOpacity,
   TextInput,
+  ScrollView,
 } from 'react-native';
 
 // create a component
@@ -29,6 +30,7 @@ class Detail extends Component {
   render() {
     return (
       <View style={styles.container}>
+      <ScrollView>
         <View style={styles.Header}>
           <Image style={styles.Logo} source={require('../src/image/car.png')} />
           {/* <Text style={styles.userName}>Sun id</Text> */}
@@ -132,13 +134,18 @@ class Detail extends Component {
               marginVertical: 20,
               borderRadius: 25,
             }}
-            onPress={() => this.props.navigation.navigate('Login')}>
+            onPress={() => 
+            //this.props.navigation.navigate('Login')
+            alert('Update')
+            }>
             <Text style={{color: 'white', fontWeight: '800', fontSize: 20}}>
               Update
             </Text>
           </TouchableOpacity>
         </View>
+        </ScrollView>
       </View>
+      
     );
   }
 }
@@ -151,26 +158,27 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
   },
   Header: {
-    top: 20,
+    // top: 20,
     flex: 0.2,
     // justifyContent: 'center',
     alignItems: 'center',
   },
   Logo: {
-    width: 180,
-    height: 180,
+    width: 150,
+    height: 150,
   },
   userName: {
     color: 'red',
     fontSize: 30,
     fontWeight: '800',
-    top: -14,
+    // top: -14,
   },
 
   Body: {
     flex: 0.67,
+    top:-15,
     // backgroundColor: 'blue',
-    justifyContent: 'center',
+    // justifyContent: 'center',
     alignItems: 'center',
   },
   text: {
@@ -198,7 +206,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   Footer: {
-    justifyContent: 'center',
+    // justifyContent: 'center',
     alignItems: 'center',
     flex: 0.13,
   },
