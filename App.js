@@ -31,6 +31,9 @@ const HomeDictionary = createStackNavigator({
   HomeDictionary: {
     screen: Dictionary,
   },
+  Detail:{
+    screen:Detail,
+  }
 });
 const HomePage = createStackNavigator({
   HomePage1: {
